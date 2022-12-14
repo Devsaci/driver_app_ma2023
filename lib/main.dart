@@ -14,10 +14,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Driver_App',
       theme: ThemeData(
-
         primarySwatch: Colors.blue,
       ),
-      //home: ,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Welcome to Driver App"),
+        ),
+      ),
     );
   }
 }
