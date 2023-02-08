@@ -13,7 +13,9 @@ class _MySplashScreenState extends State<MySplashScreen> {
   startTimer() {
     Timer(
       const Duration(seconds: 3),
-      () {},
+      () {
+        //send user to home screen
+      },
     );
   }
 
