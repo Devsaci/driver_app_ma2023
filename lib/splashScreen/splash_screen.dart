@@ -45,7 +45,7 @@ class _MySplashScreenState extends State<MySplashScreen> {
             const Text(
               "Uber & inDriver Clone App",
               style: TextStyle(
-                fontSize: 15,
+                fontSize: 20,
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
               ),
