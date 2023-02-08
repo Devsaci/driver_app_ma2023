@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:driver_app/mainScreens/main_screen.dart';
 import 'package:flutter/material.dart';
 
 class MySplashScreen extends StatefulWidget {
@@ -15,6 +16,12 @@ class _MySplashScreenState extends State<MySplashScreen> {
       const Duration(seconds: 3),
       () {
         //send user to home screen
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (c) => MainScreen(),
+          ),
+        );
       },
     );
   }
