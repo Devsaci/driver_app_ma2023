@@ -36,6 +36,19 @@ class _MySplashScreenState extends State<MySplashScreen> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.black,
+      child: Column(
+        children: [
+          Image.asset("images/logo1.png"),
+          const Text(
+            "Uber & inDriver Clone App",
+            style: TextStyle(
+              fontSize: 24,
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
