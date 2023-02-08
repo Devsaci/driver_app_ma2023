@@ -1,3 +1,4 @@
+import 'package:driver_app/splashScreen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,11 +11,8 @@ void main() {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Scaffold(
-          appBar: AppBar(
-            title: const Text("Welcome to Driver App"),
-          ),
-        ),
+        home: const MySplashScreen(),
+        debugShowCheckedModeBanner: true,
       ),
     ),
   );
