@@ -32,6 +32,7 @@ class _MainScreenState extends State<MainScreen>
       ),
       body: TabBarView(
         controller: tabController,
+        physics: const NeverScrollableScrollPhysics(),
         children: const [
           HomeTabPage(),
           EarningsTabPage(),
