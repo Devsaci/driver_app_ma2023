@@ -1,5 +1,7 @@
-import 'package:driver_app/splashScreen/splash_screen.dart';
+
 import 'package:flutter/material.dart';
+
+import 'authentication/signup_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -11,7 +13,7 @@ void main() {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const MySplashScreen(),
+        home: const SignUpScreen(),
         debugShowCheckedModeBanner: true,
       ),
     ),
