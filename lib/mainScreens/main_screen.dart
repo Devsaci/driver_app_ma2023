@@ -18,7 +18,7 @@ class _MainScreenState extends State<MainScreen>
   TabController? tabController;
   int selectedIndex = 0;
   onItemClicked(int index){
-
+    selectedIndex = index;
   }
   @override
   void initState() {
