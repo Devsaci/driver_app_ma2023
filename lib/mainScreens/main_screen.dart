@@ -16,6 +16,7 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen>
     with SingleTickerProviderStateMixin {
   TabController? tabController;
+  int selectedIndex = 0;
 
   @override
   void initState() {
@@ -27,9 +28,9 @@ class _MainScreenState extends State<MainScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Welcome'),
-      ),
+      // appBar: AppBar(
+      //   title: const Text('Welcome'),
+      // ),
       body: TabBarView(
         controller: tabController,
         physics: const NeverScrollableScrollPhysics(),
@@ -47,7 +48,7 @@ class _MainScreenState extends State<MainScreen>
           BottomNavigationBarItem(icon: Icon(Icons.star), label: "Ratings"),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: "Account"),
         ],
-        unselectedItemColor: Colors.white54,
+        unselectedItemColor: Colors.amberAccent,
         selectedItemColor: Colors.white,
         backgroundColor: Colors.black,
         type: BottomNavigationBarType.fixed,
