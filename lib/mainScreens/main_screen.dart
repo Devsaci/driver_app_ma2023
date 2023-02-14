@@ -17,7 +17,7 @@ class _MainScreenState extends State<MainScreen>
     with SingleTickerProviderStateMixin {
   TabController? tabController;
   int selectedIndex = 0;
-
+  onItemClicked(){}
   @override
   void initState() {
     // TODO: implement initState
@@ -54,6 +54,7 @@ class _MainScreenState extends State<MainScreen>
         type: BottomNavigationBarType.fixed,
         selectedLabelStyle: const TextStyle(fontSize: 14),
         showUnselectedLabels: true,
+        onTap:  onItemClicked(),
       ),
 
 
