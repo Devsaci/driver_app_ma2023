@@ -5,6 +5,16 @@ class EarningsTabPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder(child: Text("EarningsTabPage"),);
+    return Center(
+      child: Container(
+        height: 300,
+        width: 300,
+        color: Colors.black,
+        child: const Text(
+          "EarningsTabPage",
+          style: TextStyle(color: Colors.white,fontSize: 30),
+        ),
+      ),
+    );
   }
 }

@@ -5,6 +5,16 @@ class ProfileTabPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder(child:Text( "ProfileTabPage"),);
+    return Center(
+      child: Container(
+        height: 300,
+        width: 300,
+        color: Colors.black,
+        child: const Text(
+          "ProfileTabPage",
+          style: TextStyle(color: Colors.white,fontSize: 30),
+        ),
+      ),
+    );
   }
 }
