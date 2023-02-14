@@ -26,7 +26,6 @@ class _MainScreenState extends State<MainScreen>
   }
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     tabController = TabController(length: 4, vsync: this);
   }
@@ -60,6 +59,7 @@ class _MainScreenState extends State<MainScreen>
         type: BottomNavigationBarType.fixed,
         selectedLabelStyle: const TextStyle(fontSize: 14),
         showUnselectedLabels: true,
+        currentIndex: selectedIndex,
         onTap:  onItemClicked,
       ),
 
