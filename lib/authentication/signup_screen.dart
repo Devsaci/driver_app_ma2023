@@ -18,6 +18,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             padding: EdgeInsets.all(12),
             child: Image.asset("images/logo1.png"),
           ),
+          Text('Register as a Driver'),
         ],
       ),
     );
