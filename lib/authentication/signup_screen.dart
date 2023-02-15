@@ -12,6 +12,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
   Widget build(BuildContext context) {
     return  Scaffold(
       backgroundColor: Colors.teal.shade900,
+      body: Column(children: [],),
+
     );
   }
 }
