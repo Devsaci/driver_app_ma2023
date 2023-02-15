@@ -19,9 +19,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
       backgroundColor: Colors.teal.shade900,
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(20.0),
           child: Column(
             children: [
+              const SizedBox(height: 10,),
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: Image.asset("images/logo1.png"),
@@ -33,6 +34,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     color: Colors.grey,
                     fontWeight: FontWeight.bold),
               ),
+              const SizedBox(height: 10,),
               TextField(
                 controller: nameTextEditingController,
                 style: const TextStyle(color: Colors.grey),
@@ -100,6 +102,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   hintStyle: TextStyle(color: Colors.grey, fontSize: 14),
                 ),
               ),
+              const SizedBox(height: 20,),
               ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
