@@ -8,9 +8,11 @@ class SignUpScreen extends StatefulWidget {
 }
 
 class _SignUpScreenState extends State<SignUpScreen> {
+  TextEditingController nameTextEditingController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: Colors.teal.shade900,
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -23,9 +25,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
             const Text(
               'Register as a Driver',
               style: TextStyle(
-                  fontSize: 26, color: Colors.grey, fontWeight: FontWeight.bold),
+                  fontSize: 26,
+                  color: Colors.grey,
+                  fontWeight: FontWeight.bold),
             ),
-
+            TextField(
+              controller: nameTextEditingController,
+            ),
           ],
         ),
       ),
