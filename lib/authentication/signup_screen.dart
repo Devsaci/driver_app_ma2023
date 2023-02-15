@@ -34,10 +34,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 controller: nameTextEditingController,
                 style: const TextStyle(color: Colors.grey),
                 decoration: const InputDecoration(
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.amberAccent),
+                  ),
+
                   labelText: "Name",
-                  labelStyle: TextStyle(color: Colors.grey,fontSize: 14),
+                  labelStyle: TextStyle(color: Colors.grey, fontSize: 14),
                   hintText: "Name",
-                  hintStyle: TextStyle(color: Colors.grey,fontSize: 14),
+                  hintStyle: TextStyle(color: Colors.grey, fontSize: 14),
                 ),
               ),
             ],
