@@ -12,14 +12,22 @@ class _SignUpScreenState extends State<SignUpScreen> {
   Widget build(BuildContext context) {
     return  Scaffold(
       backgroundColor: Colors.teal.shade900,
-      body: Column(
-        children: [
-          Padding(
-            padding: EdgeInsets.all(12),
-            child: Image.asset("images/logo1.png"),
-          ),
-          Text('Register as a Driver'),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(20),
+              child: Image.asset("images/logo1.png"),
+            ),
+            const Text(
+              'Register as a Driver',
+              style: TextStyle(
+                  fontSize: 26, color: Colors.grey, fontWeight: FontWeight.bold),
+            ),
+
+          ],
+        ),
       ),
     );
   }
