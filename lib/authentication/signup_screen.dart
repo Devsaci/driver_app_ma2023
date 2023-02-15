@@ -32,6 +32,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             TextField(
               controller: nameTextEditingController,
               style: const TextStyle(color: Colors.grey),
+              decoration: const InputDecoration(),
             ),
           ],
         ),
