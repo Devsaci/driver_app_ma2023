@@ -51,6 +51,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               ),
               TextField(
                 controller: emailTextEditingController,
+                keyboardType: TextInputType.emailAddress,
                 style: const TextStyle(color: Colors.grey),
                 decoration: const InputDecoration(
                   enabledBorder: UnderlineInputBorder(
