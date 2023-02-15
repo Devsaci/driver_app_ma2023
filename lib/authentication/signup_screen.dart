@@ -100,6 +100,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   hintStyle: TextStyle(color: Colors.grey, fontSize: 14),
                 ),
               ),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text("Create Account"),
+              )
             ],
           ),
         ),
