@@ -37,7 +37,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   enabledBorder: UnderlineInputBorder(
                     borderSide: BorderSide(color: Colors.amberAccent),
                   ),
-
+                  focusedBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.amberAccent),
+                  ),
                   labelText: "Name",
                   labelStyle: TextStyle(color: Colors.grey, fontSize: 14),
                   hintText: "Name",
