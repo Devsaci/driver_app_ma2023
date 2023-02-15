@@ -35,6 +35,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
               decoration: const InputDecoration(
                 labelText: "Name",
                 labelStyle: TextStyle(color: Colors.grey,fontSize: 14),
+                hintText: "Name",
+                hintStyle: TextStyle(color: Colors.grey,fontSize: 14),
               ),
             ),
           ],
