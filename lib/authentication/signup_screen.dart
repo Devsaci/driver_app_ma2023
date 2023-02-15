@@ -9,6 +9,7 @@ class SignUpScreen extends StatefulWidget {
 
 class _SignUpScreenState extends State<SignUpScreen> {
   TextEditingController nameTextEditingController = TextEditingController();
+  TextEditingController emailTextEditingController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -32,6 +33,22 @@ class _SignUpScreenState extends State<SignUpScreen> {
               ),
               TextField(
                 controller: nameTextEditingController,
+                style: const TextStyle(color: Colors.grey),
+                decoration: const InputDecoration(
+                  enabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.amberAccent),
+                  ),
+                  focusedBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.amberAccent),
+                  ),
+                  labelText: "Name",
+                  labelStyle: TextStyle(color: Colors.grey, fontSize: 14),
+                  hintText: "Name",
+                  hintStyle: TextStyle(color: Colors.grey, fontSize: 14),
+                ),
+              ),
+              TextField(
+                controller: emailTextEditingController,
                 style: const TextStyle(color: Colors.grey),
                 decoration: const InputDecoration(
                   enabledBorder: UnderlineInputBorder(
