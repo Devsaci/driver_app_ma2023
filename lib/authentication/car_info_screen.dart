@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CarInfoScreen extends StatefulWidget {
-  const CarInfoScreen({Key? key}) : super(key: key);
+  //const CarInfoScreen({Key? key}) : super(key: key);
 
   @override
   State<CarInfoScreen> createState() => _CarInfoScreenState();

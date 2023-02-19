@@ -1,3 +1,4 @@
+import 'package:driver_app/authentication/car_info_screen.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -104,7 +105,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
               ),
               const SizedBox(height: 20,),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pop(context, MaterialPageRoute(builder: (context) => CarInfoScreen(),));
+                },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.lightGreenAccent),
                 child: const Text(
