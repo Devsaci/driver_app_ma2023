@@ -1,6 +1,6 @@
-
 import 'package:flutter/material.dart';
 
+import 'authentication/car_info_screen.dart';
 import 'authentication/signup_screen.dart';
 
 void main() {

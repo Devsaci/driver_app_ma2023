@@ -23,7 +23,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
           padding: const EdgeInsets.all(20.0),
           child: Column(
             children: [
-              const SizedBox(height: 10,),
+              const SizedBox(
+                height: 10,
+              ),
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: Image.asset("images/logo1.png"),
@@ -35,7 +37,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     color: Colors.grey,
                     fontWeight: FontWeight.bold),
               ),
-              const SizedBox(height: 10,),
+              const SizedBox(
+                height: 10,
+              ),
               TextField(
                 controller: nameTextEditingController,
                 style: const TextStyle(color: Colors.grey),
@@ -103,10 +107,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   hintStyle: TextStyle(color: Colors.grey, fontSize: 14),
                 ),
               ),
-              const SizedBox(height: 20,),
+              const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  Navigator.pop(context, MaterialPageRoute(builder: (context) => CarInfoScreen(),));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => CarInfoScreen(),
+                      ));
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.lightGreenAccent),
