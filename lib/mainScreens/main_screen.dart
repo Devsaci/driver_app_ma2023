@@ -17,13 +17,13 @@ class _MainScreenState extends State<MainScreen>
     with SingleTickerProviderStateMixin {
   TabController? tabController;
   int selectedIndex = 0;
-  onItemClicked(int index){
+  onItemClicked(int index) {
     setState(() {
       selectedIndex = index;
       tabController!.index = selectedIndex;
     });
-
   }
+
   @override
   void initState() {
     super.initState();
@@ -47,9 +47,10 @@ class _MainScreenState extends State<MainScreen>
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.credit_card), label: "Earnings"),
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.credit_card), label: "Earnings"),
           BottomNavigationBarItem(icon: Icon(Icons.star), label: "Ratings"),
           BottomNavigationBarItem(icon: Icon(Icons.person), label: "Account"),
         ],
@@ -60,10 +61,8 @@ class _MainScreenState extends State<MainScreen>
         selectedLabelStyle: const TextStyle(fontSize: 14),
         showUnselectedLabels: true,
         currentIndex: selectedIndex,
-        onTap:  onItemClicked,
+        onTap: onItemClicked,
       ),
-
-
     );
   }
 }
