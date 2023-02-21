@@ -10,13 +10,6 @@ class CarInfoScreen extends StatefulWidget {
 class _CarInfoScreenState extends State<CarInfoScreen> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(10),
-          child: Image.asset("images/logo1.png"),
-        ),
-      ],
-    );
+    return Scaffold();
   }
 }
