@@ -11,7 +11,12 @@ class _CarInfoScreenState extends State<CarInfoScreen> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [],
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(10),
+          child: Image.asset("images/logo1.png"),
+        ),
+      ],
     );
   }
 }
