@@ -93,7 +93,7 @@ class _CarInfoScreenState extends State<CarInfoScreen> {
                 value: car,
                 child: Text(
                   car,
-                  style: const TextStyle(color: Colors.grey),
+                  style: const TextStyle(color: Colors.grey, fontSize: 20,fontWeight: FontWeight.bold),
                 ),
               )).toList(),
             // ++++++++++++++++
