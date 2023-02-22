@@ -12,6 +12,8 @@ class _CarInfoScreenState extends State<CarInfoScreen> {
   TextEditingController carModelTextEditingController = TextEditingController();
   TextEditingController carNumberTextEditingController =
       TextEditingController();
+  TextEditingController carColorTextEditingController = TextEditingController();
+  String? selectedCarType;
 
   @override
   Widget build(BuildContext context) {
@@ -62,6 +64,30 @@ class _CarInfoScreenState extends State<CarInfoScreen> {
               hintStyle: TextStyle(color: Colors.grey, fontSize: 10),
               labelStyle: TextStyle(color: Colors.grey, fontSize: 14),
             ),
+          ),
+          TextField(
+            controller: carColorTextEditingController,
+            style: const TextStyle(color: Colors.grey),
+            decoration: const InputDecoration(
+              labelText: "Car Color",
+              hintText: "Car Color",
+              enabledBorder: UnderlineInputBorder(
+                borderSide: BorderSide(color: Colors.grey),
+              ),
+              focusedBorder: UnderlineInputBorder(
+                borderSide: BorderSide(color: Colors.grey),
+              ),
+              hintStyle: TextStyle(color: Colors.grey, fontSize: 10),
+              labelStyle: TextStyle(color: Colors.grey, fontSize: 14),
+            ),
+          ),
+          DropdownButton(
+            onChanged: (newValue) {
+              setState(() {
+                selectedCarType = newValue.toString();
+              });
+            },
+            items: [],
           ),
         ],
       ),
