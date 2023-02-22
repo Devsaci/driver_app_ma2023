@@ -13,6 +13,7 @@ class _CarInfoScreenState extends State<CarInfoScreen> {
   TextEditingController carNumberTextEditingController =
       TextEditingController();
   TextEditingController carColorTextEditingController = TextEditingController();
+  List<String> carTypesList = ["uber-x", "uber-go", "bike"];
   String? selectedCarType;
 
   @override
@@ -87,7 +88,15 @@ class _CarInfoScreenState extends State<CarInfoScreen> {
                 selectedCarType = newValue.toString();
               });
             },
-            items: [],
+            //+++++++++++++++++
+            items: carTypesList.map((car) => DropdownMenuItem(
+                value: car,
+                child: Text(
+                  car,
+                  style: const TextStyle(color: Colors.grey),
+                ),
+              )).toList(),
+            // ++++++++++++++++
           ),
         ],
       ),
