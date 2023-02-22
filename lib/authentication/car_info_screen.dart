@@ -13,7 +13,12 @@ class _CarInfoScreenState extends State<CarInfoScreen> {
     return Scaffold(
       backgroundColor: Colors.teal,
       body: Column(
-        children: [],
+        children: [
+          Padding(
+            padding: EdgeInsets.all(20.0),
+            child: Image.asset("images/logo1.png"),
+          )
+        ],
       ),
     );
   }
